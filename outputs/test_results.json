@@ -1,0 +1,141 @@
+[
+  {
+    "question": "What are the main steps of an incident response plan?",
+    "in_scope": true,
+    "answer": "The context does not specify the main steps of an incident response plan. Therefore, I cannot provide a structured response regarding the specific steps involved. However, it is important to note that incident response planning should occur within the broader context of a business continuity plan.",
+    "sources": [
+      "Legacy_Application_Management_Cheat_Sheet.md",
+      "Mobile_Application_Security_Cheat_Sheet.md",
+      "NIST_SP-800-53_rev5_catalog_load.csv"
+    ]
+  },
+  {
+    "question": "What is a SQL injection attack and how can it be prevented?",
+    "in_scope": true,
+    "answer": "A SQL injection attack consists of the insertion or \"injection\" of either a partial or complete SQL query via data input transmitted from the client (browser) to the web application. This type of attack can lead to various malicious outcomes, such as reading sensitive data from the database, modifying database data, executing administrative operations on the database, recovering file content from the database management system (DBMS) file system, or issuing commands to the operating system.\n\nTo prevent SQL injection flaws, developers should follow these guidelines:\n\n1. Stop writing dynamic queries with string concatenation.\n2. Prevent malicious SQL input from being included in executed queries.\n\nThese techniques can be applied across different programming languages and database types, including XML databases, which may face similar injection issues.",
+    "sources": [
+      "Injection_Prevention_Cheat_Sheet.md",
+      "SQL_Injection_Prevention_Cheat_Sheet.md"
+    ]
+  },
+  {
+    "question": "Explain the principle of least privilege.",
+    "in_scope": true,
+    "answer": "The principle of Least Privilege is a security principle that states that users should only be given the minimum amount of access necessary to perform their job. This means that users should only have access to the resources they need to do their job, and no more. This approach helps to reduce the risk of unauthorized access to sensitive data or systems.\n\nIn addition to its application at the user level, least privilege can also guide the internal structure of a system. This includes constructing modules so that only the elements encapsulated by the module are directly operated on by the functions within that module. Elements external to a module that may be affected by the module’s operation are accessed indirectly through interactions with the module. Furthermore, the scope of a module should include only those system elements necessary for its functionality, and the access modes for these elements should be minimal.\n\nOverall, enforcing least privilege is crucial for maintaining the security of an organization's data and systems, and it should be applied throughout the software development lifecycle (SDLC).",
+    "sources": [
+      "Authorization_Cheat_Sheet.md",
+      "NIST_SP-800-53_rev5_catalog_load.csv",
+      "Secure_Product_Design_Cheat_Sheet.md"
+    ]
+  },
+  {
+    "question": "What should I do if I suspect a ransomware infection?",
+    "in_scope": true,
+    "answer": "The context does not provide specific steps for responding to a suspected ransomware infection. However, it emphasizes the importance of responding quickly and effectively to cybersecurity incidents. Here are actions you might consider based on the context:\n\n1. **Implement Incident Response Processes**: Follow established incident response processes to systematically address the situation.\n2. **Analyze Information**: Gather and analyze information related to the suspected infection to understand the scope and impact.\n3. **Take Appropriate Action**: Based on the analysis, take appropriate actions to mitigate the threat, which may include discontinuing use of the product if mitigations are unavailable, as indicated in the context.\n\nFor specific mitigation steps related to ransomware, the context does not specify them, so it is advisable to consult relevant resources or guidelines tailored to ransomware incidents.",
+    "sources": [
+      "CISA_known_exploited_vulnerabilities.json",
+      "NIST.SP.800-61r3.pdf",
+      "Web_Service_Security_Cheat_Sheet.md"
+    ]
+  },
+  {
+    "question": "What is the difference between symmetric and asymmetric encryption?",
+    "in_scope": true,
+    "answer": "The difference between symmetric and asymmetric encryption is as follows:\n\n1. **Key Usage**:\n   - **Symmetric Encryption**: Uses the same key for both encryption and decryption. This key is known as a symmetric key.\n   - **Asymmetric Encryption**: Uses a key pair consisting of a public key and a private key. The public key may be known by anyone, while the private key should be under the sole control of the entity that owns the key pair.\n\n2. **Reversibility**:\n   - **Symmetric Encryption**: The process is reversible, meaning that data can be decrypted back to its original form using the same key.\n   - **Asymmetric Encryption**: The process also allows for reversibility, but it relies on the relationship between the public and private keys.\n\n3. **Applications**:\n   - **Symmetric Encryption**: Used to provide data confidentiality, authentication, and integrity services (e.g., Message Authentication Codes).\n   - **Asymmetric Encryption**: Used to compute digital signatures, establish cryptographic keying material, and generate random numbers.\n\nThese distinctions highlight the fundamental differences in how each type of encryption operates and their respective use cases.",
+    "sources": [
+      "Cryptographic_Storage_Cheat_Sheet.md",
+      "Key_Management_Cheat_Sheet.md",
+      "Security_Terminology_Cheat_Sheet.md"
+    ]
+  },
+  {
+    "question": "What are the key controls recommended for securing a cloud environment?",
+    "in_scope": true,
+    "answer": "The key controls recommended for securing a cloud environment, as outlined in the context, include:\n\n1. **Use a Centralized Secrets Management Solution**: Implement a centralized secrets management solution that can integrate with multiple cloud providers to standardize secret management and enforce consistent security policies.\n\n2. **Standardize Security Policies**: Define and enforce standardized security policies for managing secrets, including policies for key rotation, access control, and auditing.\n\n3. **Automate Key Rotation**: Implement automated key rotation processes to ensure that keys are rotated consistently and securely across all cloud providers.\n\n4. **Implement Fine-Grained Access Control**: Use fine-grained access control mechanisms to restrict access to secrets based on the principle of least privilege, ensuring that access control policies are consistently enforced across all cloud providers.\n\n5. **Enable Comprehensive Auditing and Monitoring**: Implement comprehensive auditing and monitoring of secret access and usage across all cloud providers, using centralized logging and monitoring solutions to aggregate and analyze logs.\n\n6. **Connect Identities**: Use the same login across all clouds to streamline identity management.\n\n7. **Secure Connections**: Encrypt communication between cloud environments.\n\n8. **Consistent Policies**: Apply the same security rules across all cloud providers.\n\n9. **Centralized Monitoring**: See security events from all clouds in one place.\n\n10. **Manage IAM Effectively**: Set up suitable access policies and roles, ensuring tight control over what can impersonate service accounts and avoiding open privileges that could lead to privilege escalation.\n\nThese controls collectively enhance the security posture of a cloud environment by managing secrets effectively and ensuring consistent security practices across multiple cloud providers.",
+    "sources": [
+      "Cryptographic_Storage_Cheat_Sheet.md",
+      "Secrets_Management_Cheat_Sheet.md",
+      "Zero_Trust_Architecture_Cheat_Sheet.md"
+    ]
+  },
+  {
+    "question": "What is multi-factor authentication and why is it important?",
+    "in_scope": true,
+    "answer": "Multi-factor authentication (MFA) is a security mechanism that requires users to present two or more different factors to achieve authentication. The authentication factors are defined as follows:\n\n1. **Something You Know**: Examples include personal identification numbers (PINs).\n2. **Something You Have**: This includes physical authenticators such as cryptographic private keys and smart cards.\n3. **Something You Are**: This refers to biometric factors.\n\nMFA is important because it enhances security by requiring multiple independent factors for authentication, making it more difficult for unauthorized users to gain access. This is particularly relevant for both non-privileged and privileged accounts, as organizations can implement MFA to mitigate risks associated with unauthorized access. Organizations can provide additional security measures, such as additional or more rigorous authentication mechanisms, for specific types of access.",
+    "sources": [
+      "Multifactor_Authentication_Cheat_Sheet.md",
+      "NIST_SP-800-53_rev5_catalog_load.csv"
+    ]
+  },
+  {
+    "question": "How does a zero-day vulnerability differ from a known CVE?",
+    "in_scope": true,
+    "answer": "The context does not specify the differences between a zero-day vulnerability and a known CVE. Therefore, I cannot provide a clear response to that question.",
+    "sources": [
+      "CISA_known_exploited_vulnerabilities.json",
+      "Vulnerable_Dependency_Management_Cheat_Sheet.md"
+    ]
+  },
+  {
+    "question": "What is the best recipe for chocolate chip cookies?",
+    "in_scope": false,
+    "answer": "This question is outside the scope of this cybersecurity knowledge base and cannot be answered by this system.",
+    "sources": []
+  },
+  {
+    "question": "asdkjh qweoiu random gibberish query",
+    "in_scope": false,
+    "answer": "This question is outside the scope of this cybersecurity knowledge base and cannot be answered by this system.",
+    "sources": []
+  },
+  {
+    "question": "What is phishing and what are common indicators of a phishing email?",
+    "in_scope": true,
+    "answer": "The context does not specify a definition of phishing or common indicators of a phishing email. However, it does mention that personnel should be trained to recognize suspicious communications, which can include receiving unexpected emails, emails containing strange or poor grammar, or emails from unfamiliar senders that appear to be from known sponsors or contractors. These elements can serve as indicators of potentially suspicious email.",
+    "sources": [
+      "Authentication_Cheat_Sheet.md",
+      "Email_Validation_and_Verification_Cheat_Sheet.md",
+      "NIST_SP-800-53_rev5_catalog_load.csv",
+      "Subdomain_Takeover_Prevention_Cheat_Sheet.md"
+    ]
+  },
+  {
+    "question": "Describe the CIA triad in information security.",
+    "in_scope": true,
+    "answer": "The context does not specify information about the CIA triad in information security. Therefore, I cannot provide a response to that question.",
+    "sources": [
+      "NIST_SP-800-53_rev5_catalog_load.csv"
+    ]
+  },
+  {
+    "question": "An employee received an email claiming to be from IT support, asking them to urgently click a link and re-enter their password to avoid account suspension. They clicked it and entered their credentials before realizing it looked suspicious.",
+    "in_scope": true,
+    "answer": "The incident described involves a potential social engineering attack, as the employee received an email that appeared to be from IT support, urging them to take immediate action. This aligns with the need for regular social engineering training, as highlighted in the context.\n\nTo address this incident, the following relevant points apply:\n\n1. **Training on Suspicious Communications**: The employee should have been trained to recognize suspicious communications, such as unexpected emails requesting urgent action. The context emphasizes the importance of literacy training on recognizing such communications.\n\n2. **Response to Suspicious Emails**: Personnel should be trained on how to respond to suspicious emails. In this case, the employee should have verified the authenticity of the email before taking any action.\n\n3. **Mitigation Steps**: The context does not specify the exact steps the employee should take after realizing the mistake, but it is important to report the incident to the IT department.\n\nIn summary, this incident underscores the importance of training employees to recognize and respond appropriately to suspicious communications to prevent unauthorized access to accounts.",
+    "sources": [
+      "Authentication_Cheat_Sheet.md",
+      "Choosing_and_Using_Security_Questions_Cheat_Sheet.md",
+      "NIST_SP-800-53_rev5_catalog_load.csv"
+    ]
+  },
+  {
+    "question": "We noticed our web application's login form is accepting unusual input containing SQL keywords like ' OR '1'='1 in the username field, and it appears to be returning unexpected database records.",
+    "in_scope": true,
+    "answer": "The incident described indicates a potential SQL injection attack, as the application is using untrusted user input to build an SQL query. The presence of SQL keywords like ' OR '1'='1 suggests that the input is being manipulated to alter the intended query execution.\n\nRelevant points from the context include:\n\n1. **Symptom of SQL Injection**: The application is likely constructing SQL queries using user input without proper sanitization, which is a common cause of SQL injection vulnerabilities.\n\n2. **Recommended Response**: To mitigate this issue, it is advised to use parameterized queries, stored procedures, or an Object Relational Mapper (ORM) that builds queries securely. This approach is more robust than escaping all user-supplied input, which is discouraged due to its fragility.\n\nIn summary, the unexpected behavior in the login form indicates a SQL injection vulnerability, and the recommended remediation is to implement parameterized queries or similar secure coding practices.",
+    "sources": [
+      "Injection_Prevention_Cheat_Sheet.md",
+      "Java_Security_Cheat_Sheet.md",
+      "SQL_Injection_Prevention_Cheat_Sheet.md"
+    ]
+  },
+  {
+    "question": "Our monitoring system flagged an unusually large volume of outbound traffic from an internal server to an unfamiliar external IP address late at night, and several files on that server now have a .locked extension.",
+    "in_scope": true,
+    "answer": "The incident described involves an unusually large volume of outbound traffic from an internal server to an unfamiliar external IP address, which aligns with the need to analyze outbound communications traffic for anomalies as specified in the control SI-4(11). This situation indicates a potential security issue, as it involves unexpected communication patterns that could suggest unauthorized data exfiltration or other malicious activity.\n\nRecommended responses based on the context include:\n\n1. **Analyze the Outbound Traffic**: Investigate the nature of the outbound traffic to the unfamiliar IP address to determine if it is indeed malicious. This includes checking for the type of data being sent and the duration of the connection.\n\n2. **Monitor for Anomalies**: Continue to monitor the internal server and other organization-defined interior points for further anomalies, such as additional large file transfers or unusual protocols being used.\n\n3. **Implement Enhanced Monitoring**: If the internal server does not log properly, consider using network-based detection tools to monitor traffic patterns and connection attempts.\n\nTaking these steps can help in identifying and mitigating the potential threat posed by the observed anomalies.",
+    "sources": [
+      "Business_Logic_Security_Cheat_Sheet.md",
+      "File_Upload_Cheat_Sheet.md",
+      "NIST_SP-800-53_rev5_catalog_load.csv",
+      "Zero_Trust_Architecture_Cheat_Sheet.md"
+    ]
+  }
+]
