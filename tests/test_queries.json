@@ -1,0 +1,17 @@
+[
+  "What are the main steps of an incident response plan?",
+  "What is a SQL injection attack and how can it be prevented?",
+  "Explain the principle of least privilege.",
+  "What should I do if I suspect a ransomware infection?",
+  "What is the difference between symmetric and asymmetric encryption?",
+  "What are the key controls recommended for securing a cloud environment?",
+  "What is multi-factor authentication and why is it important?",
+  "How does a zero-day vulnerability differ from a known CVE?",
+  "What is the best recipe for chocolate chip cookies?",
+  "asdkjh qweoiu random gibberish query",
+  "What is phishing and what are common indicators of a phishing email?",
+  "Describe the CIA triad in information security.",
+  "An employee received an email claiming to be from IT support, asking them to urgently click a link and re-enter their password to avoid account suspension. They clicked it and entered their credentials before realizing it looked suspicious.",
+  "We noticed our web application's login form is accepting unusual input containing SQL keywords like ' OR '1'='1 in the username field, and it appears to be returning unexpected database records.",
+  "Our monitoring system flagged an unusually large volume of outbound traffic from an internal server to an unfamiliar external IP address late at night, and several files on that server now have a .locked extension."
+]

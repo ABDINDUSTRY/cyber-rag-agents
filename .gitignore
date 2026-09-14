@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+src/vectorstore/chroma_db/
+outputs/test_results.json
